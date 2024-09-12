@@ -258,6 +258,7 @@ function ContactUs() {
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
+    console.log(event.target.value)
 
     formData.append("access_key", "bde3fa9a-c34d-407a-af6f-79fef8b74e8e");
 
