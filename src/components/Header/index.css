@@ -1,0 +1,222 @@
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    background-color: #bd3371;
+    padding: 0px 13%;
+    max-width: 100% 1440px;
+    height: 40px;
+    font-family: "Roboto",sans-serif;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+.contact-details{
+    display: flex;
+}
+
+.personal-details{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.icon{
+    margin-right: 8px;
+    height: 20px;
+    width: 20px;
+    color: #5e032c;
+}
+
+/* .file-icon{
+    color: #fff;
+    
+} */
+
+.personal-details a{
+    color: #fff;
+    font-size: 14px;
+}
+
+.social-media-details{
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+.social-media-details li{
+    margin-left: 20px;
+    color: #cacbcc;
+}
+
+.notification-icon{
+    background-color: #fff;
+    margin-left: 20px;
+    color: #5e032c;
+    height: 40px;
+    padding: 0px 8px;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100% 1440px;
+    padding: 20px 13%;
+    font-family: "Roboto" sans-serif;
+}
+
+.header-logo{
+   height: 45px;
+   width: 45px;
+   color: #b5185e;
+}
+
+.header-details{
+    display: flex;
+    align-items: center;
+}
+
+.header-details li{
+    list-style-type: none;
+    margin-right: 50px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.header-details a{
+    color: #000;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.header-container .login-btn{
+    color: #fff;
+    background-color: #bd3371;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.menu-icon{
+    display: none;
+}
+
+
+.whats-app-logo-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.whatsapp-icon{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; 
+    padding: 10px;
+}
+
+.whats-app-logo{
+    height: 50px;
+    width: 50px;
+    color: #458a04;
+    transition: transform 0.5s ease-in-out;
+    
+}
+
+.whats-app-logo:hover{
+    transform: rotate(360deg)
+}
+
+@media screen and (max-width:765px){
+    .contact-container{
+        padding: 0px 15px;
+    }
+
+    .contact-container .contact-details .email{
+        display: none;
+    }
+
+    .contact-container .file-details{
+        display: none;
+    }
+
+    .social-media-details .social{
+        display: none;
+    }
+
+    .header-container{
+        padding: 10px 15px;
+    }
+
+    .menu-section{
+        display: flex;
+        align-items: center;
+    }
+
+    .header-logo{
+        height: 35px;
+        width: 35px;
+    }
+
+    .header-details{
+        display: none;
+    }
+
+    .menu-icon{
+        display: block;
+        margin-right: 20px;
+        height: 25px;
+        width: 25px;
+        color: #b5185e;
+    }
+
+    .header-container .login-btn{
+        padding: 8px 10px;
+        font-size: 12px;
+        border-radius: 5px;
+    }
+
+    .horizontal-line{
+        width: 100%;
+        background-color: #000;
+    }
+
+    .menu-item{
+        font-family: 14px;
+        color: #000;
+    }
+}
+
+@media screen and (min-width:991px){
+    .contact-container .contact-details .email{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contact-container{
+        padding: 0px 13%;
+    }
+
+    .header-container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .social-media-details .social{
+        display: flex;
+    }
+    
+    
+}
