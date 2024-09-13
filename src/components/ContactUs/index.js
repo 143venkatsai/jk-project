@@ -63,7 +63,7 @@ const ContactUs = () =>{
     
             if (res.success) {
                 console.log("Success", res);
-                alert("Sent successfully");
+                alert("Details sent successfully");
             } else {
                 alert(`Error Details: ${JSON.stringify(res)}`);
             }
@@ -118,15 +118,15 @@ const ContactUs = () =>{
                             </div>
                             <div class="radio-group">
                                 <label>
-                                    <input type="radio"  class="radio-input" name="service type"  />
+                                    <input type="radio"  class="radio-input" name="serviceType"  />
                                     Business
                                 </label>
                                 <label>
-                                    <input type="radio"  class="radio-input" name="service type"  />
+                                    <input type="radio"  class="radio-input" name="serviceType"  />
                                     Career
                                 </label>
                                 <label>
-                                    <input type="radio"  class="radio-input" name="service type" />
+                                    <input type="radio"  class="radio-input" name="serviceType" />
                                     Service
                                 </label>
                             </div>
